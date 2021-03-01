@@ -1,0 +1,131 @@
+
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+html, body {margin: 0; height: 100%; min-height: 100%; background-color: #f1f6f9;}
+
+@media only screen and (min-width: 993px) {
+    nav {
+        background-color: #14274e;
+        position: fixed;
+        width: 100%;
+    }
+    .hamburger {
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 992px) {
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: none;
+    }
+    .nav-ul {
+        margin: 100px auto;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        color: white;
+    }
+
+    .nav-ul.show {
+        display: flex;
+        background-color: #14274e;
+        border-radius: 6px;
+    }
+
+    .hamburger {
+        margin: 10px 10px;
+        display: block;
+        float: right;
+    }
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+    text-decoration: none;
+}
+  
+nav ul li a {
+    display: block;
+    color: white;
+    font-family: "Lato";
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 50px ;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #9ba4b4;
+    transition: 0.5s;
+}
+
+.Avatar {
+    color: black;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 80px;
+}
+
+.Avatar p {
+    color: #394867;
+    font-family: "Lato";
+    font-size: 24px;
+}
+
+#avatar {
+    margin-top: 50px;
+    border-radius:50%;
+} 
+
+
+.hamburger {
+    position: fixed;
+    background-color: transparent;
+    color: #14274e;
+    border: 0;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.title {
+    margin: 80px auto;
+    padding: 80px 0px;
+    background-color: #394867;
+    box-shadow: 0 0 5px #394867;
+    color:#f1f6f9;
+    font-style: bold;
+    width: 100%;
+    text-align: center;
+    font-family: Lato;
+    font-size: 55px;
+}
+
+p {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px ;
+    color: #394867;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
